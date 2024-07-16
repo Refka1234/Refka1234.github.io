@@ -1,0 +1,136 @@
+
+.parallax {
+  height: 100vh; /* Prendra 100% de la hauteur du viewport, et donc de l'écran */
+  background-attachment: fixed; /* Fixe l'image pendant le scroll */
+  background-size: cover; /* L'image prendra 100% de l'espace, quitte à la crop */
+  background-position: center; /* Centre la position de l'image */
+  background-repeat: no-repeat; /* Empêche l'image de se répéter en fonction de la taille d'écran */
+
+}
+.pre {
+  position: absolute; /* postulat de départ */
+  top: 50%; left: 50%; /* à 50%/50% du parent référent */
+  transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+  text-align: center;
+  font-size: xx-large;
+  
+}
+.deu {
+  position: absolute; /* postulat de départ */
+  top: 50%; left: 50%; /* à 50%/50% du parent référent */
+  transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+  text-align: center;
+  font-size: xx-large;
+  
+}
+.parallax1 {
+    position: relative; 
+    background-image: url("./images/OIG2.jpg");
+    background-size: 100% 100%;
+  }
+.bloc {
+  color:white;
+  text-align: center;
+  background-color: black;
+  height: 200px;
+  padding: 20px;
+}  
+a {
+  color: white;
+  text-decoration: none;
+}
+.parallax2 {
+    position: relative;
+    background-image: url("./images/Advanced\ Robotic\ Arm.jpg");
+    background-size: 100% 100%;
+  }
+
+/*table {
+     border-collapse: collapse;
+    border: 2px solid rgb(140 140 140);
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+  }
+  
+caption {
+    caption-side: bottom;
+    padding: 10px;
+    font-weight: bold;
+  }
+  
+thead,
+  tfoot {
+    background-color: rgb(228 240 245);
+  }
+  
+th,td {
+    border: 1px solid rgb(160 160 160);
+    padding: 8px 10px;
+  }
+  
+td:last-of-type {
+    text-align: center;
+  }
+  
+tbody > tr:nth-of-type(even) {
+    background-color: rgb(237 238 242);
+  }
+  
+tfoot th {
+    text-align: right;
+  }
+  
+tfoot td {
+    font-weight: bold;
+  } */
+
+table {
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    border-spacing : 5px 20px
+}
+caption {
+    font-size: xx-large;
+}
+img {
+    width: 240px;
+}
+.gris {
+    color: rgba(112, 108, 108, 0.719);
+}
+button {
+    background-color: black;
+    color: white;
+    width: 36%;
+}
+table:hover {
+  box-shadow: 10px 5px 5px rgb(65, 59, 59);
+  /* background-color: rgb(241, 205, 158); */
+  
+}
+/* .gold {
+  width: 100VW;
+  height: 100vh;
+}
+#gold  {
+  background-color: gold;
+}
+  
+#indigo {
+  background-color: indigo;
+}
+.tre {
+  width: 50%;
+  height: 50%;
+  background-color: blueviolet; 
+}
+p {
+  font-size: 2rem;
+  color: azure;
+  text-align: center;
+  margin: auto;
+}
+
+   */
