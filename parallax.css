@@ -13,7 +13,10 @@
   transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
   text-align: center;
   font-size: xx-large;
-  
+  background-color: #0000004f;
+  border-radius: 20px;
+  color: aliceblue;
+  box-shadow: #0000004f;
 }
 .deu {
   position: absolute; /* postulat de départ */
@@ -25,7 +28,7 @@
 }
 .parallax1 {
     position: relative; 
-    background-image: url("./images/OIG2.jpg");
+    background-image: url("./images/image-attractive-960x540.jpg");
     background-size: 100% 100%;
   }
 .bloc {
@@ -41,7 +44,7 @@ a {
 }
 .parallax2 {
     position: relative;
-    background-image: url("./images/Advanced\ Robotic\ Arm.jpg");
+    background-image: url("./images/jour-de-terre-d-environnement-dans-les-mains-des-arbres-cultivant.jpg");
     background-size: 100% 100%;
   }
 
