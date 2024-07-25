@@ -64,6 +64,9 @@ body {
     left: 147px;
 
 }
+span {
+    color: rgba(113, 39, 186, 1);
+}
 .content1 {
     width: 300px;
     height: 300px;
@@ -79,7 +82,7 @@ body {
     width: 300px;
     height: 300px;
     background: rgb(255,255,255);
-    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(118,60,172,1) 30%, #320F85 50%, #11071f 65%);
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(105, 59, 147, 1) 30%, #320f85 50%, #11071f 71%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -146,15 +149,10 @@ button {
     grid-template-rows: 1fr 1fr 1fr;
     margin: 20px;
     gap: 14px;
-    background: rgb(255,255,255);
-    background: linear-gradient(241deg, rgba(255,255,255,1) 0%, rgba(84,29,136,1) 0%, rgba(32,7,93,1) 92%);
+    background-image:radial-gradient(circle at 81.26% 68.05%, #26204e 0, #280d6a 25%, #1a1937 50%, #050228 75%, rgba(26, 11, 46, 1) 100%);                                             
     border-radius: 13px;
-    border-color: rgba(105, 59, 147, 1);
-    border: solid;
-    border-top: 25px;
-    /* background-color: #0000004f;
-    color: aliceblue;
-    box-shadow: #5c3383b0; */
+    border: solid rgba(105, 59, 147, 1);
+    border-bottom: 25px;
 }
 .image {
     grid-column: 1/2;
@@ -189,11 +187,9 @@ button {
     margin: 20px;
     gap: 14px;
     border-radius: 13px;
-    border-color: rgba(105, 59, 147, 1);
-    border: solid;
-    border-top: 25px;
-    background: rgb(84,29,136);
-    background: linear-gradient(241deg, rgba(84,29,136,1) 40%, rgba(255,255,255,1) 20%, rgba(32,7,93,1) 82%);
+    border: solid rgba(105, 59, 147, 1);
+    border-bottom: 25px;
+    background: linear-gradient(135deg,  rgba(27,26,55,1) 19%, #320F85 26%,rgba(27,26,55,1) 56%,rgba(27,26,55,1) 56%,rgba(27,26,55,1) 86%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 .image1 {
     grid-column: 1/2;
@@ -228,9 +224,12 @@ button {
     margin: 20px;
     gap: 14px;
     border-radius: 13px;
-    border-color: rgba(105, 59, 147, 1);
-    border: solid;
-    border-top: 25px;
+    border: solid rgba(105, 59, 147, 1);
+    border-bottom: 25px;
+    background: linear-gradient(117deg, rgb(1 1 19) 15%, rgba(50, 15, 133, 1) 35%, rgba(50, 15, 133, 1) 15%, rgba(27, 26, 55, 1) 60%, #11071f 100%, rgba(27, 26, 55, 1) 100%);
+
+
+
 }
 .image2 {
     grid-column: 1/2;
@@ -264,9 +263,8 @@ button {
     margin: 20px;
     gap: 14px;
     border-radius: 13px;
-    border-color: rgba(105, 59, 147, 1);
-    border: solid;
-    border-top: 25px;
+    border: solid rgba(105, 59, 147, 1);
+    background: linear-gradient(348deg, #4d00db 22%, #280d6a, rgba(26, 11, 46, 1), #000000 60%);
 }
 .image3 {
     grid-column: 1/2;
