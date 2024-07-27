@@ -67,6 +67,12 @@ body {
 span {
     color: rgba(113, 39, 186, 1);
 }
+.ellipse {
+    width: 136px;
+    top: -37px;
+    left: 355px;
+    position: relative;
+}
 .content1 {
     width: 300px;
     height: 300px;
