@@ -227,9 +227,6 @@ button {
     border: solid rgba(105, 59, 147, 1);
     border-bottom: 25px;
     background: linear-gradient(117deg, rgb(1 1 19) 15%, rgba(50, 15, 133, 1) 35%, rgba(50, 15, 133, 1) 15%, rgba(27, 26, 55, 1) 60%, #11071f 100%, rgba(27, 26, 55, 1) 100%);
-
-
-
 }
 .image2 {
     grid-column: 1/2;
@@ -293,3 +290,195 @@ button {
     height: 100%;
     text-align: center;
 }
+.project1{
+    position: relative; 
+    display: flex;
+    justify-content: center;
+
+}
+
+.p-overlap {
+    padding: 30px;
+    margin: 30px -22px;
+    position: relative;
+    top: -20px;
+    left: 20px; 
+    z-index: 3; 
+    background: #2c12506e;
+    border-radius: 8px;
+  }
+
+.phrase {
+    width: 50%;
+    height: 100px;
+}
+.lumiere2{
+    position: relative;
+}
+.enveloppe {
+    z-index: 2;
+    width: 309px;
+    height: 194px;
+    margin: 1em auto;
+    box-shadow: 0 0 30px rgba(118, 60, 172, 1);
+    border: 1px solid rgba(118, 60, 172, 1);
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 1);
+    position: relative; 
+    text-align: center;
+    color: white;
+    font-family: Courier, monospace;
+    font-size: 1em;
+    text-shadow: -1px -1px 1px rgba(113, 39, 186, 1), 1px 1px 1px rgb(114, 31, 198);
+    line-height: 20px;
+    overflow: hidden; 
+  }
+  
+  .enveloppe:before,
+  .enveloppe:after {
+    content: '';
+    position: absolute;
+    width: 57.5%;
+    height: 1px;
+    background: #fff;
+    box-shadow: 0 0 3px 2px rgba(113, 39, 186, 1), 340px -82px 4px 1px rgba(113, 39, 186, 1), 0 3px 5px #11071f;
+    top: 2px;
+    left: 2px;
+    transform-origin: top left;
+  }
+  
+  .enveloppe:after {
+    transform: rotate(-30deg);
+    transform-origin: top right;
+    left: auto;
+    right: 2px;
+    background: #fff;
+    box-shadow: 0 0 3px 2px rgba(113, 39, 186, 1), 340px -82px 4px 1px rgba(113, 39, 186, 1), 0 3px 5px #11071f;
+  }
+  
+  .enveloppe:before {
+    transform: rotate(30deg);
+  }
+  
+  b {
+    display: block;
+    color: rgba(0, 0, 0, 0.189);
+    font-variant: small-caps;
+    transform: rotate(-30deg) translate(5px, 47px);
+    opacity: 0.3;
+  }
+  
+  b:before {
+    content: '';
+    display: inline-block;
+    border-radius: 100%;
+    width: 0.5em;
+    height: 1em;
+    box-shadow: -14px 0 5px rgba(255, 255, 255, 0.2); 
+    transform: rotate(-25deg);
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .project2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+
+}
+.phrase1 {
+    width: 50%;
+    height: 100px;
+}
+.span {
+    display: flex;
+    justify-content: flex-end;
+}
+.span1 {
+    display: flex;
+    justify-content: flex-end;
+}
+.p-overlap1 {
+    height: 100px;
+    background: #2c12506e;
+    margin: 30px -25px;
+    position: relative;
+    top: -20px;
+    right: 20px;
+    z-index: 3;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .enveloppe1 {
+    z-index: 2;
+    width: 309px;
+    height: 194px;
+    margin: 1em auto;
+    box-shadow: 0 0 30px rgba(118, 60, 172, 1);
+    border: 1px solid rgba(118, 60, 172, 1);
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 1);
+    position: relative; 
+    text-align: center;
+    color: white;
+    font-family: Courier, monospace;
+    font-size: 1em;
+    text-shadow: -1px -1px 1px rgba(113, 39, 186, 1), 1px 3px 3px #320486;
+    line-height: 20px;
+    overflow: hidden; 
+  }
+  
+  .enveloppe1:before,
+  .enveloppe1:after {
+    content: '';
+    position: absolute;
+    width: 57.5%;
+    height: 1px;
+    background: #fff;
+    box-shadow: 0 0 3px 2px rgba(113, 39, 186, 1), 340px -82px 4px 1px rgba(113, 39, 186, 1), 0 3px 5px #11071f;
+    top: 2px;
+    left: 2px;
+    transform-origin: top left;
+  }
+  
+  .enveloppe1:after {
+    transform: rotate(-30deg);
+    transform-origin: top right;
+    left: auto;
+    right: 2px;
+    background: #fff;
+    box-shadow: 0 0 3px 2px rgba(113, 39, 186, 1), 340px -82px 4px 1px rgba(113, 39, 186, 1), 0 3px 5px #11071f;
+  }
+  
+  .enveloppe1:before {
+    transform: rotate(30deg);
+  }
+  
+  .b1 {
+    display: block;
+    color: rgba(0, 0, 0, 0.189);
+    font-variant: small-caps;
+    transform: rotate(-30deg) translate(-1px, 36px);
+    opacity: 1.3;
+  }
+  
+  .b1:before {
+    content: '';
+    display: inline-block;
+    border-radius: 100%;
+    width: 0.5em;
+    height: 1em;
+    box-shadow: -14px 0 5px rgba(255, 255, 255, 0.2); 
+    transform: rotate(-25deg);
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .contact p {
+    margin: 70px 0px;
+  }
+  .contact1 {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+  }
