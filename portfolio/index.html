@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6"/>
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6"/> -->
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="./images/favicon.png">
+    <script defer src="main.js"></script>
     <title>portfolio</title>
 </head>
 <body>
+    <div class="btn">
+       <a href="#" class="icone"><i class="fa-solid fa-circle-arrow-up"></i></a>
+    </div>
     <div class="container">
         <div class="header">
             <div class="logo">
@@ -18,9 +20,12 @@
             </div>
             <div class="menu">
                 <ul>
-                    <li><a href="../parallax.html">Home</a></li>
-                    <li><a href="../index.html">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#content5">Expériences</a></li>
+                    <li><a href="#content6">Compétences</a></li>
+                    <li><a href="#projects">Projets</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -34,61 +39,146 @@
                     <img class="arrow" src="./images/Arrow.svg" alt="">
                 </div>
                 <div class="content2">
-                    <p>A Développeuse Full Stack</p>
-                    <h1>Lorem ipsum dolor sit, corrupti ratione nam adipisci maxime obcaecati<span> aperiam</span > !</h1><img class="ellipse" src="./images/Ellipse 5.svg" alt="">
-                    <p>Lorem ipsum dolor sit, corrupti ratione nam adipisci maxime obcaecati periam !</p>
+                    <p>Bienvenue sur mon portfolio</p>
+                    <h1>Je conçois des solutions web complètes, de l'interface utilisateur au serveur, pour des expériences numériques performantes et <span>fluides!<img id="ellipse" src="./images/Ellipse 5.svg" alt=""></span ></h1> 
+                    <p>Quel défi complexe ai-je résolu pour créer une application mobile innovante ?</p>
                 </div>
             </div>
-            <div class="content3">
-                <h1>Lorem ipsum dolor sit amet.</h1>
-                <p>Lorem ipsum dolor sit, corrupti ratione nam adipisci maxime obcaecati aperiam! <a href="https://descodeuses.org/"><img class="descoduses" src="./images/descoduses.png" alt="">Descodeuses</a>,</p>
+            <div id="about" class="content3">
+                <h1>À propos de moi ...</h1>
+                <p>Actuellement, je suis en formation chez : <a href="https://descodeuses.org/"><img class="descoduses" src="./images/descoduses.png" alt=""> Descodeuses</a>,</p>
             </div>
             <div class="content4">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo delectus quibusdam aspernatur blanditiis possimus. Dolorum velit provident exercitationem similique eligendi. Perspiciatis, nobis eum voluptatem dolores sit suscipit vitae cum. Optioquibusdam aspernatur blanditiis possimus. Dolorum velit provident exercitationem similique eligendi. Perspiciatis, nobis eum voluptatem dolores sit suscipit vitae .</p>
+                <p>En formation intensive de conceptrice développeuse web et mobile chez DesCodeuses, je me spécialise dans le développement full-stack avec une maîtrise des technologies modernes telles que HTML, CSS, JavaScript, ainsi que des frameworks comme React et Node.js tout en utilisant la méthode agile. Passionnée par la création de solutions digitales, je suis à la recherche d'un stage de 6 mois à partir du 30 décembre 2024, afin de renforcer mes compétences en participant activement à des projets ambitieux. Je souhaite contribuer au développement de sites web et d’applications mobiles innovants tout en continuant à apprendre auprès de professionnels du secteur.</p>
             </div>
-            <div class="content5">
+            <div id="content5" class="content5">
                 <div class="lumiere1"></div>
-                <h2>My Skills</h2>
+                <h2>Expériences</h2>
                 <div class="skills">
                     <div class="skill1">
                         <div class="image"><img src="./images/icon1.png" alt=""></div>
-                        <div class="text"><h3>HTML</h3></div>
-                        <div class="paragraphe"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p></div>
-                        <div class="bouton"><button>LEARN MORE</button></div>
+                        <div class="text"><h3>ENSEIGNANTE MATERNELLE</h3></div>
+                        <div class="paragraphe"><p> Patience, créativité, gestion de projet et résolution de problèmes complexes, travail en équipe et adaptation rapide.</p>
+                        </div>
+                        <div class="bouton"><button>EN SAVOIR PLUS</button></div>
                     </div>
 
                     <div class="skill2">
                         <div class="image1"><img src="./images/icon2.png" alt=""></div>
-                        <div class="text1"><h3>HTML</h3></div>
-                        <div class="paragraphe1"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p></div>
-                        <div class="bouton1"><button>LEARN MORE</button></div>
+                        <div class="text1"><h3>HOTESSE DE CAISSE</h3></div>
+                        <div class="paragraphe1"><p>Gestion du stress, attention aux détails, service client, rapidité d'exécution, résolution de problèmes et polyvalence.</p></div>
+                        <div class="bouton1"><button>EN SAVOIR PLUS</button></div>
                     </div>
                     
                     <div class="skill3"> 
                         <div class="image2"><img src="./images/icon3.png" alt=""></div>
-                        <div class="text2"><h3>HTML</h3></div>
-                        <div class="paragraphe2"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p></div>
-                        <div class="bouton2"><button>LEARN MORE</button></div>
+                        <div class="text2"><h3>AIDE AUX DEVOIRS ET FORMATION EN LIGNE</h3></div>
+                        <div class="paragraphe2"><p>Pédagogie, communication claire, patience, adaptation aux niveaux d'apprentissage, gestion du temps et résolution de problèmes.</p></div>
+                        <div class="bouton2"><button>EN SAVOIR PLUS</button></div>
                     </div>
 
                     <div class="skill4">
                         <div class="image3"><img src="./images/icon4.png" alt=""></div>
-                        <div class="text3"><h3>HTML</h3></div>
-                        <div class="paragraphe3"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p></div>
-                        <div class="bouton3"><button>LEARN MORE</button></div>
+                        <div class="text3"><h3>BÉNÉVOLE EN ASSOCIATION</h3></div>
+                        <div class="paragraphe3"><p>Esprit d'équipe, organisation, gestion de projets, résilience, empathie, et capacité à s'adapter aux imprévus.</p></div>
+                        <div class="bouton3"><button>EN SAVOIR PLUS</button></div>
                     </div>
                 </div>
             </div>
-            <div class="content6">
-                <img src="./images/Skills.png" alt="">
+            <div id="content6" class="content6">
+                <h2>Compétences</h2>
+                <!-- <img src="./images/Skills.png" alt="Compétences"> -->
+                <p>Je cherche actuellement à rejoindre une équipe <span>interfonctionnelle</span > qui <br> valorise l'amélioration de la vie des gens grâce à une conception accessible.</p> 
+                <div id="competences"> 
+                    <div class="circle">
+                        <div class="competence1">
+                            <img id="figma" src="./svgs/Rectangle 1.svg" alt="">
+                            <img id="mysql" src="./svgs/mySQL.svg" alt="">
+                            <img id="c" src="./svgs/Rectangle 3.svg" alt="">
+                            <img id="php" src="./svgs/PHP-logo.svg 1.svg" alt="">
+                            <img id="html" src="./svgs/html.svg" alt="">
+                            <img id="css" src="./svgs/Rectangle 7.svg" alt="">
+                            <img id="js" src="./svgs/Rectangle 6.svg" alt="">
+                        </div> 
+                        <div class="competence2">
+                            <img id="bash" src="./svgs/Gnu-bash-logo.svg 1.svg" alt="">
+                            <img id="java" src="./svgs/Java-Logo 1.svg" alt="">
+                            <img id="monochromatic" src="./svgs/vertical-logo-monochromatic_1 1.svg" alt="">
+                            <img id="react" src="./svgs/Rectangle 14.svg" alt="">
+                            <img id="mongodb" src="./svgs/Rectangle 13.svg" alt="">
+                            <img id="python" src="./svgs/Python_logo_and_wordmark.svg 1.svg" alt="">
+                        </div>
+                        <div class="circle2">
+                            <img src="./svgs/Ellipse 12.svg" alt="">
+                            <img src="./svgs/Ellipse 13.svg" alt="">
+                            <img src="./svgs/Ellipse 14.svg" alt="">
+                            <img src="./svgs/Ellipse 15.svg" alt="">
+                            <img src="./svgs/Ellipse 16.svg" alt="">
+                            <img src="./svgs/Ellipse 17.svg" alt="">
+                            <img src="./svgs/Ellipse 18.svg" alt="">
+                        </div>
+                        <div class="circle1">
+                            <img src="./svgs/Ellipsep 6.svg" alt="">
+                            <img src="./svgs/Ellipse 7.svg" alt="">
+                            <img src="./svgs/Ellipse 8.svg" alt="">
+                            <img src="./svgs/Ellipse 9.svg" alt="">
+                            <img src="./svgs/Ellipse 10.svg" alt="">
+                            <img src="./svgs/Ellipse 11.svg" alt="">
+                        </div>
+                        
+                    </div>
+            
+                    <div class="vector">
+                        <img src="./svgs/Vector 28.svg" alt="">
+                        <img src="./svgs/Vector 29.svg" alt="">
+                        <img src="./svgs/Vector 30.svg" alt="">
+                        <img src="./svgs/Vector 27.svg" alt="">
+                        <img src="./svgs/Vector 26.svg" alt="">
+                        <img src="./svgs/Vector 25.svg" alt="">
+                    </div>
+                    <div class="rond">
+                        <div>
+                            <img class="ellipse-20" src="./svgs/Ellipse 20.svg" alt="">
+                        </div>
+                        <div>
+                            <img class="ellipse-25" src="./svgs/Ellipse 6.svg" alt="">
+                        </div>
+                        <div>
+                            <img class="ellipse-24" src="./svgs/logo.svg" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="goo">
+                            <img class="ellipse-23" src="./svgs/Ellipse 23.svg" alt="">
+                            <img class="ellipse-22" src="./svgs/Ellipse 22.svg" alt="">
+                            <img class="ellipse-21" src="./svgs/Ellipse 21.svg" alt="">
+
+                            <div class="ellipse">
+                                <img src="./svgs/Group 1904.svg" alt="">
+                                <img src="./svgs/vector2.svg" alt="">
+                                <img src="./svgs/Groupf.svg" alt="">
+                                <img src="./svgs/Group 1900.svg" alt="">
+                                <img src="./svgs/Group 1901.svg" alt="">
+                                <img src="./svgs/Group 1902.svg" alt="">
+                                <img src="./svgs/Group 1903.svg" alt="">
+                                <img src="./svgs/Group 1905.svg" alt="">
+                            </div>
+                            <div class="group-g">
+                                <img class="group-g1" src="./svgs/Group.svg" alt="">
+                                <img class="group-g2" src="./svgs/Vector1.svg" alt="">
+                                <img class="group-g3" src="./svgs/Vector.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="content7">
+            <div id="projects" class="content7">
                 <div class="projects">
                     <div class="project1">
                         <div class="phrase">
-                            <span>Lorem ipsum </span>
-                            <h2>My Projects</h2>
-                            <p class="p-overlap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae. quibusdam aspernatur blanditiis possimus. Dolorum velit provident exercitationem similique eligendi. Perspiciatis, nobis eum voluptatem dolores sit suscipit vitae cum.</p>
+                            <span>Mes projets</span>
+                            <h2> Front-end</h2>
+                            <p class="p-overlap">Passionné par le développement web, j'ai réalisé plusieurs projets front-end utilisant des technologies modernes comme HTML5, CSS3, JavaScript et React. Chaque projet reflète mon souci du détail, mon engagement à offrir des interfaces utilisateurs intuitives et des expériences web réactives et performantes.</p>
                             <img src="./images/icon-park-solid_click.svg" alt="">
                             <img src="./images/icon-park-solid_click.svg" alt="">
                         </div>
@@ -100,9 +190,9 @@
                     <div class="project2">
                         <!-- <div class="video"><video src=""></video></div> -->
                         <div class="phrase1">
-                            <span class="span">Lorem ipsum </span>
-                            <h2 class="span">My Projects</h2>
-                            <p class="p-overlap1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae. quibusdam aspernatur blanditiis possimus. Dolorum velit provident exercitationem similique eligendi. Perspiciatis, nobis eum voluptatem dolores sit suscipit vitae cum.</p>
+                            <span class="span">Mes projets</span>
+                            <h2 class="span">Back-end</h2>
+                            <p class="p-overlap1">Spécialisé dans le développement back-end, j'ai mené à bien divers projets en utilisant des technologies comme Node.js, Express, et des bases de données telles que MongoDB et MySQL. Mon objectif est de créer des architectures robustes, sécurisées et optimisées pour assurer des performances efficaces et une évolutivité durable</p>
                             <div class="span1">
                                 <img src="./images/icon-park-solid_click.svg" alt="">
                                 <img src="./images/icon-park-solid_click.svg" alt="">
@@ -116,19 +206,66 @@
                 </div>
             </div>
             <div class="content8">
-                <div class="contact">
-                    <h3>contact</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
-                    <div class="contact1">
-                        <i class="fa-brands fa-dribbble"></i>
-                        <i class="fa-brands fa-twitter"></i>
-                        <i class="fa-brands fa-linkedin"></i>
-                        <i class="fa-brands fa-facebook"></i>
+                <div id="contact" class="contact">
+                    <h3>contact</h3> 
+                    <div class="contact_form tow">
+                        <form action="/ma-page-de-traitement" method="post">
+                            <div class="input">
+                                <input type="text" name="name" placeholder="Votre nom">
+                            </div>
+                            <div class="input">
+                                <input type="email" name="user_mail" placeholder="Votre email">
+                            </div>
+                            <div class="form_field text_area two">
+                                <div class="form_field_inner_text">
+                                    <textarea name="textarea" placeholder="Vous pouvez écrire ici."></textarea>
+                                </div>
+                            </div>
+                            <div class="button">
+                                <button type="submit">Envoyer le message</button>
+                            </div>
+                          </form>
                     </div>
+                      
                 </div>
-
+                <div class="letter-image">
+                    <div class="animated-mail">
+                      <div class="back-fold"></div>
+                      <div class="letter">
+                        <div class="letter-border"></div>
+                        <div class="letter-title">
+                            <p><i class="fa-solid fa-envelope"></i>
+                                farjallah.refka@gmail.com</p>
+                        </div>
+                        <div class="letter-context">
+                            <p><i class="fa-solid fa-phone"></i>0658359459</p>
+                        </div>
+                        <!-- <div class="letter-adresse">
+                            <p><i class="fa-solid fa-location-dot"><i>
+                                2 Allée Hélène Boucher 93270 Sevran</p>
+                        </div> -->
+                        <div class="letter-stamp">
+                          <div class="letter-stamp-inner"></div>
+                        </div>
+                      </div>
+                      <div class="top-fold"></div>
+                      <div class="body"></div>
+                      <div class="left-fold"></div>
+                    </div>
+                    <div class="shadow"></div>
             </div>
+        </div>
+        <!-- <a class="fr-link fr-icon-arrow-up-fill fr-link--icon-left" href="#top">
+            Haut de page
+        </a> -->
+        <div class="footer">
+            <div class="contact1">
+                <a href="https://github.com/Refka1234/Refka1234.github.io"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/refka-farjallah-91277825a"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://pin.it/7CFIciCQZ"><i class="fa-brands fa-square-pinterest"></i></a>
+                <a href="https://medium.com/@francais"><i class="fa-brands fa-medium"></i></a>
             </div>
+            <p class="copyright">© 2024 Mon Portfolio</p>
         </div>
     </div>
     
