@@ -38,6 +38,9 @@ body {
     color: white;
     text-decoration: none;
 }
+.menu ul li a:hover {
+    color: rgba(113, 39, 186, 1); 
+}
 .content {
     background-color: #11071F;
     color: #fff; 
@@ -477,7 +480,7 @@ button {
     height: 1em;
     box-shadow: -14px 0 5px rgba(255, 255, 255, 0.2); 
     transform: rotate(-25deg);
-    margin-left: 1em;
+    --margin-left: 1em;
     margin-right: 1em;
   }
   .contact p {
@@ -487,4 +490,9 @@ button {
     display: flex;
     justify-content: space-between;
     padding-bottom: 50px;
+    font-size: 2rem;
   }
+  .contact .contact1 i:hover {
+    color: rgba(113, 39, 186, 1);
+}
+
