@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     background-color: #11071F;
     font-family: serif;
@@ -10,13 +13,24 @@ body {
     justify-content: center;
     align-items: center;
 }
-.btn {
-    color: whitesmoke;
+ .btn {
+    height: 40px;
+    width: 40px;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
     position: fixed;
-    right: 47px;
-    bottom: 30px;
+    bottom: 20px;
+    right: 20px;
     cursor: pointer;
+       
+ }
+ .btn a {
+    color: whitesmoke;
 }
+ .btn i:hover {
+    color: rgba(113, 39, 186, 1);
+ }
 .container {
     max-width: 1440px;
     margin: 0 auto;
@@ -72,7 +86,7 @@ body {
     position: absolute;
     top: -27px;
     left: 262px;
-    width: 172px;
+    width: 191px;
 }
 .arrow {
     position: absolute;
@@ -104,9 +118,9 @@ span {
     color: rgba(113, 39, 186, 1);
 }
 #ellipse {
-    width: 140px;
-    top: -7px;
-    left: -10px;
+    width: 130px;
+    top: -6px;
+    left: -6px;
     position: absolute;
 }
 .content3 {
@@ -719,6 +733,9 @@ button {
     margin-left: 1em;
     margin-right: 1em;
   }
+  .content7 a {
+    text-decoration: none;
+  }
   .project2{
     position: relative;
     display: flex;
@@ -826,6 +843,7 @@ button {
     float: left;
 }
 .input input {
+    color: #fff;
     width: 94%;
     height: 57px;
     padding-left: 23px;
@@ -836,6 +854,7 @@ button {
     background: #2c12506e;
 }
 .form_field.text_area.two .form_field_inner_text textarea {
+    color: #fff;
     width: 58%;
     height: 124px;
     margin-bottom: 33px;
