@@ -47,10 +47,11 @@ body {
     align-items: center;
 }
 .logo img {
-    width: 90px;
+    width: 100px;
 }
 .menu {
     width: 50%;
+    padding: 10px;
 }
 .menu ul{
     list-style: none;
@@ -1078,3 +1079,195 @@ form .text_area .form_field_inner_text textarea {
     text-align: center;
     margin-bottom: 50px;
  }
+
+ /* Media Queries pour mobile */
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 0 10px; /* Réduire encore plus le padding pour les petits écrans */
+    }
+
+    .header {
+        flex-direction: column; /* Adaptation pour mobile */
+        position: relative;
+        left: 236px;
+    }
+    .header .logo {
+        margin-right: 700px;
+        margin-top: -23px;
+    }
+   .logo img {
+    width: 150px;
+   }
+   .burger {
+    display: block;
+    position: relative;
+   }
+    .menu {
+        display: none;
+    }
+
+    .menu ul {
+        flex-direction: column; /* Empiler les éléments du menu */
+        align-items: center;
+    }
+
+    .main {
+        flex-direction: column; /* Adapter l'affichage pour mobile */
+        width: 60%;
+        margin-left: 270px;
+        margin-bottom: -348px;
+    }
+
+    .content1, .content2, .content3, .content4, .content5 {
+        width: 95%; /* Ajuster la largeur pour les petits écrans */
+    }
+    .content1 {
+        position: relative;
+        text-shadow: 0px 0px 10px #fafafa, 0px 0px 20px #fff;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+    .lumiere {
+        margin-left: -206px;
+        background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(105, 59, 147, 1) 30%, #320f85 50%, #11071f 71%);
+        display: flex;
+        justify-content: center;
+    } 
+    .arrow {
+        position: absolute;
+        top: -70px;
+        left: 153px;
+    }
+    .content1 p {
+        position: absolute;
+        top: -64px;
+        left: 295px;
+    }
+    .content2 {
+        width: auto;
+        position: relative;
+        top: -436px;
+        left: 324px;
+        gap: 35px;
+    }
+    .content3 {
+        margin-left: 277px;
+    }
+    .content4 {
+        margin-left: 277px;
+        margin-bottom: 100px;
+    }
+    /* .content4 p {
+        width: 100%;
+    } */
+    .content5 {
+        margin-left: 249px;
+     }
+    .content5 h2 {
+        margin-left: 40px;
+     }
+    .lumiere1 {
+        left: 144px;
+        top: 80px;
+    }
+    .skills {
+        display: unset;
+        position: absolute;
+        height: 33vh;
+    }
+    .content6 {
+        position: relative;
+        left: 236px;
+        top: 74px;
+    }
+    .content6 h2 {
+        margin-left: 51px;
+     }
+     #figma {
+        left: -206px;
+     }
+    #mysql {
+        left: -153px;
+    }
+    #c {
+        left: -86px;
+    }
+    #php {
+        left: -28px;
+    }
+    #html {
+        left: 43px;
+    }
+    #css {
+        left: 105px;
+    }
+    #js {
+        left: 165px;
+    }
+    #bash {
+        left: -176px;
+    }
+
+#java {
+    left: -118px;
+}
+
+#monochromatic {
+    left: -52px;
+}
+#react {
+    left: 12px;
+}
+#mongodb {
+    left: 59px;
+}
+#python {
+    left: 114px;
+}
+.content7 {
+    position: relative;
+    left: 228px;
+}
+.content8 {
+    position: relative;
+    /* left: 266px; */
+}
+.contact {
+    left: 285px;
+    width: 776px;
+    position: relative;
+}
+.letter-image {
+     display: none;
+}
+form {
+    position: relative;
+}
+.input {
+    width: 50%;
+}
+.form_field.text_area.two .form_field_inner_text textarea {
+    width: 97%;
+}
+.button {
+    left: 40%;
+}
+.contact1 {
+    right: 147px;
+    position: relative;
+    left: 226px;
+    display: flex;
+    justify-content: space-around;
+}
+.copyright {
+    left: 233px;
+    position: relative;
+}
+.btn {
+    height: 50px; /* Adapter la taille du bouton */
+    width: 50px; /* Adapter la taille du bouton */
+    font-size: 1.5rem; /* Réduire la taille de la police */
+    display: none;         
+}
+}
