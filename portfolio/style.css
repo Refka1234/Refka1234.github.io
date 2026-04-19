@@ -132,12 +132,13 @@ span {
     margin-bottom: 50px;
 }
 .content3 a {
+    font-size: 1.2rem;
     text-decoration: none;
-    color: rgb(169, 145, 230);
+    color: rgb(50, 192, 252);
 }
-.descoduses {
-    width: 15px;
-    height: 15px;
+.Ironhack {
+    width: 25px;
+    height: 25px;
     border-radius: 100%;
 }
 .content4 {
