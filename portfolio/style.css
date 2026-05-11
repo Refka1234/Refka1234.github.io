@@ -78,6 +78,10 @@ body {
     gap: 60px;
     margin-bottom: 80px;
 }
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
 .content1 {
     position: relative;
     width: 300px;
@@ -101,7 +105,7 @@ body {
     height: 200px;
 }
 
-.lumiere {
+ .lumiere {
     width: 300px;
     height: 300px;
     background: rgb(255,255,255);
@@ -145,13 +149,21 @@ span {
 .content4 {
     margin-bottom: 100px;
 }
+/* SECTION EXPÉRIENCES */
 .content5 {
     position: relative;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
-    min-height: 100vh;
+    padding-bottom: 60px;
+}
+.content5 h2 {
+    position: relative;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #fff;
 }
 .lumiere1 {
+    z-index: 0;
     position: absolute;
     top: 0;
     left: 268px;
@@ -160,14 +172,14 @@ span {
     background: rgb(255,255,255);
     background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(118,60,172,1) 30%, #320F85 50%, #11071f 65%);
 }
+/* GRILLE DES EXPÉRIENCES */
 .skills {
-    position: absolute;
+    position: static;
     width: 100%;
-    height: 100vh;
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr 1fr; 
-    gap: 20px;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
 }
 button {
     height: 35px;
@@ -177,50 +189,134 @@ button {
     border-radius: 13px;
     color: #fff;
 }
-.skill1,.skill2,.skill3,.skill4 {
-    width: 100%;
-    height: 66%;
+/* CARTE EXPÉRIENCE - BASE */
+.skill {
+    z-index: 2;
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    margin: 20px;
-    gap: 14px;
+    grid-template-columns: 90px 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 10px;
+    padding: 20px;
     border-radius: 13px;
-    border: solid rgba(105, 59, 147, 1);
+    border: 1px solid rgba(105, 59, 147, 1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-.skill1 {
-    background-image:radial-gradient(circle at 81.26% 68.05%, #26204e 0, #280d6a 25%, #1a1937 50%, #050228 75%, rgba(26, 11, 46, 1) 100%);                                             
+.skill:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(113, 39, 186, 0.3);
 }
-.image,.image1,.image2,.image3 {
+/* COULEURS PAR TYPE */ 
+.skill-tech {
+    background: radial-gradient(circle at 80% 70%, #26204e 0, #280d6a 25%, #1a1937 50%, #050228 75%, rgba(26, 11, 46, 1) 100%);
+    border-color: rgba(113, 39, 186, 1);
+}
+
+.skill-pro {
+    background: linear-gradient(135deg, rgba(27, 26, 55, 1) 0%, #1a0b2e 100%);
+    border-color: rgba(105, 59, 147, 0.6);
+} 
+/* IMAGE */ 
+/* .image {
+    grid-column: 1/2;
+    grid-row: 1/4;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 5px;
+}
+
+.image img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+} */
+.image {
     grid-column: 1/2;
     grid-row: 1/4;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.text,.text1,.text2,.text3 {
+/* HEADER SKILL */
+.skill-header {
     grid-column: 2/3;
     grid-row: 1/2;
     display: flex;
-    align-items: end;
+    flex-direction: column;
+    gap: 4px;
 }
-.paragraphe,.paragraphe1,.paragraphe2,.paragraphe3 {
+ 
+.skill-header h3 {
+    font-size: 0.85rem;
+    color: #fff;
+    letter-spacing: 0.5px;
+}
+ 
+.entreprise {
+    font-size: 0.8rem;
+    color: rgba(113, 39, 186, 1);
+    font-weight: bold;
+}
+ 
+.periode {
+    font-size: 0.75rem;
+    color: rgba(200, 200, 200, 0.8);
+}
+ 
+.lieu {
+    font-size: 0.72rem;
+    color: rgba(180, 180, 180, 0.6);
+}
+/* DESCRIPTION */
+.skill-description {
     grid-column: 2/3;
     grid-row: 2/3;
 }
+
+.skill-description p {
+    font-size: 0.82rem;
+    color: rgba(220, 220, 220, 0.9);
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+/* TAGS COMPÉTENCES */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tags li {
+    font-size: 0.7rem;
+    background: rgba(113, 39, 186, 0.2);
+    border: 1px solid rgba(113, 39, 186, 0.5);
+    border-radius: 20px;
+    padding: 3px 10px;
+    color: rgba(180, 140, 255, 1);
+}
+/* BOUTON */ 
 .bouton {
     grid-column: 2/3;
     grid-row: 3/4;
     display: flex;
     align-items: center;
-    cursor: pointer;
-    z-index: 10;
-    position: relative;
+    padding-top: 8px;
     text-decoration: none;
 }
 .bouton button {
     cursor: pointer;
     pointer-events: auto;
+}
+button {
+    height: 35px;
+    width: 131px;
+    background-color: #2C1250;
+    border-color: rgba(105, 59, 147, 1);
+    border-radius: 13px;
+    color: #fff;
 }
 .skill2 {
     background: linear-gradient(135deg,  rgba(27,26,55,1) 19%, #320F85 26%,rgba(27,26,55,1) 56%,rgba(27,26,55,1) 56%,rgba(27,26,55,1) 86%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */

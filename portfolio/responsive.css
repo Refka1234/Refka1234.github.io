@@ -98,7 +98,7 @@
         position: static;
         text-align: center;
         width: 100%;
-        margin-top: 10px;
+        margin-top: -10px;
     }
 
     .arrow {
@@ -133,6 +133,7 @@
     }
 
     .skills {
+        grid-template-columns: 1fr;
         position: static;
         height: auto;
         display: flex;
@@ -140,16 +141,8 @@
         gap: 20px;
         padding: 10px;
     }
-
-    .skill1,
-    .skill2,
-    .skill3,
-    .skill4 {
-        width: 100%;
-        height: auto;
-        margin: 0;
-        padding: 15px;
-        min-height: 120px;
+    .skill {
+        grid-template-columns: 70px 1fr;
     }
 
     /* COMPETENCES - cachée sur tablette, trop complexe */
@@ -265,6 +258,13 @@
 /* ---- MOBILE (max 480px) ---- */
 @media only screen and (max-width: 480px) {
 
+    #ellipse {
+            width: 107px;
+            top: -7px;
+            left: -7px;
+            position: absolute;  
+        }
+
     .container {
         padding: 0 15px;
     }
@@ -287,23 +287,30 @@
     .content2 h1 {
         font-size: 1.3rem;
     }
-
-    .skill1,
-    .skill2,
-    .skill3,
-    .skill4 {
-        grid-template-columns: 80px 1fr;
+    .skill {
+        grid-template-columns: 1fr;
     }
-
-    .image,
-    .image1,
-    .image2,
-    .image3 {
+    .image {
         grid-column: 1/2;
+        grid-row: 1/2;
+        justify-content: flex-start;
+    }
+    .skill-header {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    
+    .skill-description {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    
+    .bouton {
+        grid-column: 1/2;
+        grid-row: 4/5;
     }
 
-    .enveloppe,
-    .enveloppe1 {
+    .enveloppe,.enveloppe1 {
         width: 100%;
     }
 
