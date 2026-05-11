@@ -1,0 +1,313 @@
+/* ================================
+   RESET MEDIA QUERIES - MOBILE FIRST
+   Breakpoints :
+   - Mobile : max-width 480px
+   - Tablette : max-width 768px
+================================ */
+
+/* ---- TABLETTE (max 768px) ---- */
+@media only screen and (max-width: 768px) {
+
+    /* CONTAINER */
+    .container {
+        padding: 0 20px;
+    }
+
+    /* HEADER */
+    .header {
+        position: relative;
+        height: auto;
+        padding: 15px 20px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo img {
+        width: 80px;
+    }
+
+    /* MENU HAMBURGER */
+    .menu {
+        width: auto;
+        padding: 0;
+    }
+
+    .menu ul {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background-color: rgba(26, 11, 46, 1);
+        padding: 20px;
+        border-radius: 10px;
+        border: 1px solid rgba(113, 39, 186, 1);
+        z-index: 100;
+    }
+
+    .menu ul.open {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+    }
+
+    .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        border-radius: 3px;
+    }
+
+    /* CONTENT GENERAL */
+    .content {
+        margin-top: 20px;
+    }
+
+    /* SECTION HERO - MAIN */
+    .main {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin-bottom: 40px;
+    }
+
+    .content1 {
+        width: 200px;
+        height: 200px;
+    }
+
+    .lumiere {
+        width: 200px;
+        height: 200px;
+    }
+
+    .fille {
+        width: 140px;
+        height: 140px;
+    }
+
+    .content1 p {
+        position: static;
+        text-align: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .content2 {
+        width: 100%;
+        margin-top: 0;
+        text-align: center;
+        gap: 15px;
+    }
+
+    /* A PROPOS */
+    .content3 {
+        margin-bottom: 30px;
+    }
+
+    .content4 {
+        margin-bottom: 50px;
+    }
+
+    /* EXPERIENCES */
+    .content5 {
+        width: 100%;
+        min-height: auto;
+        margin: 0 auto;
+    }
+
+    .lumiere1 {
+        display: none;
+    }
+
+    .skills {
+        position: static;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .skill1,
+    .skill2,
+    .skill3,
+    .skill4 {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 15px;
+        min-height: 120px;
+    }
+
+    /* COMPETENCES - cachée sur tablette, trop complexe */
+    .content6 {
+        overflow: hidden;
+    }
+
+    #competences {
+        display: none;
+    }
+
+    .content6 p {
+        margin: 20px;
+    }
+
+    /* PROJETS */
+    .project1,
+    .project2 {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .project2 {
+        flex-direction: column;
+    }
+
+    .phrase,
+    .phrase1 {
+        width: 100%;
+        height: auto;
+    }
+
+    .span {
+        justify-content: flex-start;
+    }
+
+    .span1 {
+        justify-content: flex-start;
+    }
+
+    .p-overlap,
+    .p-overlap1 {
+        margin: 15px 0;
+        position: static;
+        height: auto;
+    }
+
+    .enveloppe,
+    .enveloppe1 {
+        width: 100%;
+        max-width: 309px;
+        margin: 0 auto;
+    }
+
+    /* CONTACT */
+    .content8 {
+        position: static;
+    }
+
+    .contact {
+        width: 100%;
+        position: static;
+    }
+
+    .contact_form.tow {
+        padding: 20px;
+    }
+
+    .input {
+        width: 100%;
+        float: none;
+        margin-bottom: 10px;
+    }
+
+    .input input {
+        width: 100%;
+    }
+
+    .form_field.text_area.two .form_field_inner_text textarea {
+        width: 100%;
+    }
+
+    .button {
+        position: static;
+        left: auto;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .letter-image {
+        display: none;
+    }
+
+    /* FOOTER */
+    .contact1 {
+        position: static;
+        justify-content: space-around;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .copyright {
+        position: static;
+    }
+
+    /* BOUTON SCROLL */
+    .btn {
+        display: flex;
+    }
+}
+
+/* ---- MOBILE (max 480px) ---- */
+@media only screen and (max-width: 480px) {
+
+    .container {
+        padding: 0 15px;
+    }
+
+    .content1 {
+        width: 160px;
+        height: 160px;
+    }
+
+    .lumiere {
+        width: 160px;
+        height: 160px;
+    }
+
+    .fille {
+        width: 110px;
+        height: 110px;
+    }
+
+    .content2 h1 {
+        font-size: 1.3rem;
+    }
+
+    .skill1,
+    .skill2,
+    .skill3,
+    .skill4 {
+        grid-template-columns: 80px 1fr;
+    }
+
+    .image,
+    .image1,
+    .image2,
+    .image3 {
+        grid-column: 1/2;
+    }
+
+    .enveloppe,
+    .enveloppe1 {
+        width: 100%;
+    }
+
+    .contact1 {
+        font-size: 1.5rem;
+    }
+}
